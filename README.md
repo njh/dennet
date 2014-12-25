@@ -18,15 +18,17 @@ Checksum: 8-bits
 Wiring
 ------
 
+![Pinout diagram](https://github.com/njh/dennet/raw/master/rj45-dennet.png)
+
 The T568A cable scheme is recommended.
 
 | RJ-45 Pin  | T568A Colour | Description  |
 | ---------- | ------------ | ------------ |
-| 1          | white/green  | Power - +24v |
-| 2          | green        | Power - +24v |
+| 1          | white/green  | Power: +24v  |
+| 2          | green        | Power: +24v  |
 | 3          | white/orange | Ground       |
-| 4          | blue         | Flow - A     |
-| 5          | white/blue   | Flow - B     |
+| 4          | blue         | Flow: A      |
+| 5          | white/blue   | Flow: B      |
 | 6          | orange       | Ground       |
-| 7          | white/brown  | Return - A   |
-| 8          | brown        | Return - B   |
+| 7          | white/brown  | Return: A    |
+| 8          | brown        | Return: B    |
