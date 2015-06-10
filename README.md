@@ -7,12 +7,13 @@ Experiment into sending MQTT-SN packets on a multi-master, half-duplex RS-485 ne
 Framing
 -------
 
+```
 Src Address: 8-bits
 Dest Address: 8-bits
 Length: 8-bits
 <data>
 Checksum: 8-bits
-
+```
 
 
 Wiring
