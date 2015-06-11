@@ -38,6 +38,17 @@ By having two pairs of RS-485 signals on each cable, it allows us to create a ph
 network with a star topology, but in which electrically it is still a bus topology,
 which is what RS-485 requires.
 
+Transmission
+------------
+
+| Property   | Value  |
+| ---------- | ------ |
+| Baud Rate  | 19200  |
+| Data bits  | 8      |
+| Parity     | None   |
+| Start Bits | 1      |
+| Stop Bits  | 2      |
+
 
 ### Gateway
 
@@ -54,3 +65,9 @@ Other nodes should connect Flow and Return together, close to the RS-485 transce
 Hubs are passive devices that chain a series of ports together, so that the Return of one port is connected to the Flow of the next port.
 
 Any unused ports will require a RJ-45 plug connected into them, which connects Flow A to Return A and Flow B and Return B together.
+
+## Rules
+
+* If a collision is detected, then the node should back-off for a random amount (0-100 ms) and the double it each time there is a further collision.
+
+* Before transmitting the node should check that nobody else is already transmitting. (check the recieve buffer for 1ms)
