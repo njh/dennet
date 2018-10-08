@@ -1,7 +1,7 @@
 Dennet
 ======
 
-Experiment into sending MQTT-SN packets on a multi-master, half-duplex RS-485 network.
+Experiment into Home Automation on a half-duplex RS-485 network.
 
 
 Framing
